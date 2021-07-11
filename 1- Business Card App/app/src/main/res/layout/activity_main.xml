@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/masar_logo" />
+
+        <!--
+        You can use double quotes instead of single quotes
+        in your 'text' attribute like this: &quot;Masar&quot;
+        -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'Masar' for Development is an e-learning platform, founded by a group of experts with the aim of changing the learning path in the traditional way, and providing the opportunity to overcome the barriers of time and space and access to information regardless of your location."
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_satisfied"
+            android:drawablePadding="8dp"
+            android:text="Change your life for only 99 pounds!"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autoLink="web"
+            android:drawableStart="@drawable/ic_earth"
+            android:drawablePadding="8dp"
+            android:text="https://masar.academy"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>
