@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/iv_jelly_bean"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/jelly_bean"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_jelly_bean" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/android"
+            android:text="jelly bean"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_jelly_bean"
+            app:layout_constraintStart_toEndOf="@id/iv_jelly_bean"
+            app:layout_constraintTop_toTopOf="@id/iv_jelly_bean" />
+
+        <ImageView
+            android:id="@+id/iv_kitkat"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/kitkat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_jelly_bean" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/android"
+            android:text="kitkat"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_kitkat"
+            app:layout_constraintStart_toEndOf="@id/iv_kitkat"
+            app:layout_constraintTop_toTopOf="@id/iv_kitkat" />
+
+        <ImageView
+            android:id="@+id/iv_lollipop"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/lollipop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_kitkat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/android"
+            android:text="lollipop"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_lollipop"
+            app:layout_constraintStart_toEndOf="@id/iv_lollipop"
+            app:layout_constraintTop_toTopOf="@id/iv_lollipop" />
+
+        <ImageView
+            android:id="@+id/iv_marshmallow"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/marshmallow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_lollipop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/android"
+            android:text="marshmallow"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_marshmallow"
+            app:layout_constraintStart_toEndOf="@id/iv_marshmallow"
+            app:layout_constraintTop_toTopOf="@id/iv_marshmallow" />
+
+        <ImageView
+            android:id="@+id/iv_nougat"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/nougat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_marshmallow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/android"
+            android:text="nougat"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_nougat"
+            app:layout_constraintStart_toEndOf="@id/iv_nougat"
+            app:layout_constraintTop_toTopOf="@id/iv_nougat" />
+
+        <ImageView
+            android:id="@+id/iv_oreo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/oreo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_nougat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/android"
+            android:text="oreo"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_oreo"
+            app:layout_constraintStart_toEndOf="@id/iv_oreo"
+            app:layout_constraintTop_toTopOf="@id/iv_oreo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
