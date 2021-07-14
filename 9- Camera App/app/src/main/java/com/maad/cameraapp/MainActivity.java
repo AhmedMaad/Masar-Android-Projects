@@ -26,10 +26,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Bundle bundle = data.getExtras();
-        Bitmap image = (Bitmap) bundle.get("data");
-        ImageView iv = findViewById(R.id.iv);
-        iv.setImageBitmap(image);
+
+        if (requestCode == 101 && resultCode == RESULT_OK) {
+            Bundle bundle = data.getExtras();
+            Bitmap image = (Bitmap) bundle.get("data");
+            ImageView iv = findViewById(R.id.iv);
+            iv.setImageBitmap(image);
+        }
+
     }
 
 }
