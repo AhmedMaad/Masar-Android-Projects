@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == 101 && resultCode == RESULT_OK) {
+            //Bundle: Collection of data, stored as key/value pairs
             Bundle bundle = data.getExtras();
+            //Bitmap: Map of bits
             Bitmap image = (Bitmap) bundle.get("data");
             ImageView iv = findViewById(R.id.iv);
             iv.setImageBitmap(image);
